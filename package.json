@@ -1,0 +1,30 @@
+{
+  "name": "telegram-sub-store",
+  "version": "1.0.0",
+  "description": "بوت متجر الاشتراكات الرقمية على تلجرام",
+  "main": "src/bot.js",
+  "scripts": {
+    "start": "node src/bot.js",
+    "dev": "nodemon src/bot.js",
+    "init-db": "node scripts/initDb.js",
+    "backup-db": "node scripts/backupDb.js",
+    "add-product": "node scripts/addProduct.js",
+    "add-accounts": "node scripts/addAccounts.js"
+  },
+  "dependencies": {
+    "telegraf": "^4.16.3",
+    "better-sqlite3": "^9.4.3",
+    "dotenv": "^16.4.5",
+    "winston": "^3.13.0",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": ["telegram", "bot", "store", "subscriptions", "arabic"],
+  "author": "AbuSakhr",
+  "license": "MIT"
+}
